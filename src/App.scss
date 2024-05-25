@@ -1,0 +1,20 @@
+.app__wrapper {
+  background: url("./assets/bg-img.jpg");
+  height: 100vh;
+  box-sizing: border-box;
+  padding: 10vh 10vw;
+  position: relative;
+  background-position: 80% 20%;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.app__wrapper > .app__overlay {
+  height: 110vh;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.8);
+  width: 100vw;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+  min-height: 780px;
+}

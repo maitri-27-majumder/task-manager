@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: "Poppins", sans-serif;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+input::placeholder {
+  color: #5f5f5f !important;
+}
+label {
+  color: rgb(185, 185, 185) !important;
+}
+.ant-drawer-title {
+  color: white !important;
+}
+.ant-drawer-close {
+  color: brown !important;
+}
+* {
+  &::-webkit-scrollbar {
+    width: 6px;
+  }
+  &::-webkit-scrollbar-track {
+    background: grey;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: rgb(34, 34, 34);
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  &::-webkit-scrollbar-corner {
+    border-radius: 50%;
+  }
+  &::-webkit-scrollbar:horizontal {
+    height: 5px;
+  }
+}
