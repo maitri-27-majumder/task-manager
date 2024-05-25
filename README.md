@@ -3,6 +3,12 @@
 A responsive web application that allows users to manage a list of tasks. The application
 allows users to add, edit, delete, and mark tasks as completed.
 
+## Run
+
+- Clone the repository
+- Run `npm install` to install package dependencies.
+- Run the application `npm run dev`
+
 ## Included
 
 - A list of tasks with the following attributes: Title, Description, Due Date, and Status
