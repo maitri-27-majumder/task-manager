@@ -9,8 +9,8 @@
   overflow-x: hidden;
 }
 .app__wrapper > .app__overlay {
-  height: 110vh;
-  position: absolute;
+  height: 100vh;
+  position: fixed;
   background-color: rgba(0, 0, 0, 0.8);
   width: 100vw;
   top: 0;

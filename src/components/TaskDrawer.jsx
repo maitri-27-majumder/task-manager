@@ -42,6 +42,7 @@ const TaskDrawer = ({ open, setOpen, setTask, currentTask }) => {
 
   return (
     <Drawer
+      destroyOnClose
       title="Add a new task"
       width={720}
       onClose={onClose}
@@ -89,15 +90,15 @@ const TaskDrawer = ({ open, setOpen, setTask, currentTask }) => {
               message: "Please choose the due date",
             },
           ]}
+          initialValue={
+            currentTask && dayjs(new Date(currentTask.task["Due Date"]))
+          }
         >
           <DatePicker
             style={{
               width: "100%",
             }}
             getPopupContainer={(trigger) => trigger.parentElement}
-            defaultValue={
-              currentTask && dayjs(new Date(currentTask.task["Due Date"]))
-            }
           />
         </Form.Item>
         <Form.Item>
